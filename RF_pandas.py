@@ -21,4 +21,5 @@ def suppr(df):
 if __name__ == "__main__":
     df = pd.read_csv("rf.csv")
     df = suppr(df)
+    df.to_csv("output.csv", encoding="utf-8", index=False)
     print(df)
